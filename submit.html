@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Submit - Librarian Sound</title>
+  <style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        background-color: #000000;
+        color: #ffffff;
+    }
+    .logo {
+        width: 150px;
+        height: auto;
+        vertical-align: middle;
+        margin-right: 10px;
+    }
+    header h1 {
+        display: inline;
+    }
+    header {
+        background-color: #002244;
+        padding: 20px;
+        text-align: center;
+        color: white;
+    }
+    nav {
+        background-color: #001a33;
+        padding: 10px;
+        text-align: center;
+    }
+    nav ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+    }
+    nav ul li {
+        display: inline;
+        margin: 0 15px;
+    }
+    nav ul li a {
+        text-decoration: none;
+        color: #ffffff;
+        font-weight: bold;
+    }
+    nav ul li a:hover {
+        color: #1e90ff;
+    }
+    main {
+        padding: 30px;
+        max-width: 800px;
+        margin: auto;
+    }
+    h2 {
+        color: #1e90ff;
+    }
+    footer {
+        background-color: #002244;
+        color: white;
+        text-align: center;
+        padding: 10px;
+        margin-top: 40px;
+    }
+    form {
+        max-width: 500px;
+        margin: auto;
+    }
+    label {
+        display: block;
+        margin-top: 15px;
+        font-weight: bold;
+    }
+    input[type="text"],
+    input[type="email"],
+    input[type="file"],
+    textarea {
+        width: 100%;
+        padding: 8px;
+        margin-top: 6px;
+        border-radius: 6px;
+        border: 1px solid #ccc;
+        font-size: 1em;
+        color: #000000;
+    }
+    textarea {
+        height: 100px;
+        resize: vertical;
+    }
+    button[type="submit"] {
+        background-color: #7f5af0;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 6px;
+        cursor: pointer;
+        font-weight: bold;
+        transition: 0.3s ease;
+    }
+    button[type="submit"]:hover {
+        background-color: #ff8906;
+        transform: scale(1.05);
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Submit</h1>
+    <img src="https://i.imgur.com/UeUT6QO.jpeg" alt="Sound Library Logo" class="logo" />
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="resources.html">Resources</a></li>
+      <li><a href="credits.html">Credits</a></li>
+      <li><a href="submit.html" class="active">Submit</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <h2>Submit Your Sound</h2>
+    <form action="#" method="POST" enctype="multipart/form-data">
+      <label for="name">Name</label>
+      <input id="name" name="name" type="text" placeholder="Your full name" required />
+
+      <label for="email">Email</label>
+      <input id="email" name="email" type="email" placeholder="Your email address" required />
+
+      <label for="file">Sound File</label>
+      <input id="file" name="file" type="file" accept="audio/*" required />
+
+      <label for="description">Description</label>
+      <textarea id="description" name="description" placeholder="Describe your sound" required></textarea>
+
+      <button type="submit">Submit</button>
+    </form>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Librarian Sound. All rights reserved.</p>
+  </footer>
+</body>
+</html>
